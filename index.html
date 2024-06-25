@@ -1,0 +1,863 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  .mark{
+    width: 10%;
+    background: none;
+    background-color: transparent;
+    margin-left: 12%;
+   display: grid;
+   
+  }
+  .nav-item{
+    position: relative;
+ right: 120%;
+ margin-right: 10%;
+}
+
+.item{
+ height: 107%;
+ width: 108%; 
+ }
+.fd{
+ text-align: left !important;
+ left: 12%;
+ top: 30%;
+ font-family: tungstenw05-medium, Oswald, sans-serif;
+ size: 30%;
+ }
+.carousel-indicators  [data-bs-target] {
+ box-sizing: content-box;
+ width: 30px;
+ height: 30px;
+ padding: 1%;
+ margin-right: 3px;
+ margin-left: 3px;
+text-indent: -999px;
+border-radius: 50%;
+cursor: pointer;
+background-clip: content-box;
+transition: opacity .9s ease;
+}
+.buttom--blue{
+  background-color: transparent;
+  padding: 2%;
+  width: 28%;
+  color: #fff;
+  border-color: #fff !important;
+ padding-top: 1.6%;
+ padding-bottom: 1.6%;
+ font-style: normal;
+ font-weight: 600;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ /* transition: width 1s; */
+ border: 1px solid white;
+
+ }
+ .buttom--blue:hover {
+  background: black;
+    border-color: transparent!important;
+    transition: 0.5s;
+ }
+ .customnav{
+  position: absolute;
+   color: transparent;
+    z-index: 1;
+    margin-top: 0%;
+    padding: 4pc;
+   margin-right: 19%;
+  }
+.mtr{
+  margin-bottom: 90%;
+  margin-left: 125%;
+}
+.home-second-heading {
+    font-size: 50px;
+    line-height: 50px;
+    font-family: "tungstenw05-medium", "Oswald", sans-serif;
+    font-weight: 500;
+    color: #fff;
+   
+}
+.fullpage-desc {
+    font-size: 20px;
+    line-height: 23.5px;
+    font-weight: 400;
+    color: #fff;
+}
+.accordion{
+  background-color: transparent;
+  padding: 2%;
+  width: 25%;
+  color: #fff;
+  border-color: #fff !important;
+ padding-top: 1.6%;
+ padding-bottom: 1.6%;
+ font-style: normal;
+ font-weight: 600;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ transition: width 1s;
+ border: 1px solid white;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.container-fluid .h2 {
+  color: #fff;
+}
+
+.paragraph.p{
+    /* margin: 0 0 10px; */
+    color: #fff;
+}
+.paragraph{
+   color: #fff;
+   margin-left: 25%;
+   padding-top: 10%;
+   font-family: "tungstenw05-medium", "Oswald", sans-serif;
+ 
+}
+
+ .bottom-left{
+ background-color: transparent;
+ padding: 2%;
+ width: 50%;
+ color: #fff;
+ border-color: #fff !important;
+ padding-top: 2.6%;
+ padding-bottom: 2.6%;
+ font-style: normal;
+ font-weight: 600;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ transition: width 1s;
+ border: 1px solid white;
+ font-family: "tungstenw05-medium", "Oswald", sans-serif;
+ }
+  .bottom-left:hover {
+  background: black;
+  border-color: transparent !important;
+  transition: 0.5s;
+ }
+ .accordin{
+   color: #fff;
+   margin-bottom: 20%;
+ }
+ .mobile-copy{
+  width: 60%;
+  height: 100%;
+  margin-left: 100%;
+}
+.cancellation td{
+  font-family: "tungstenw05-medium", "Oswald", sans-serif;
+  letter-spacing: 0.0em;
+}
+.back{
+  height: 70%;
+  float: right;
+}
+.a-wrapper{
+  height: 370%;
+  font-weight: 400vw;
+}
+.accordion--ready{
+  height: 570px;
+  font-weight: 600vw;
+  background-color: #ab6604;
+  font-family: "tungstenw05-medium", "Oswald", sans-serif;
+}
+.cancel-edition{
+  font-size: 30px;
+    line-height: 23.5px;
+    font-weight: 500;
+}
+.td td{
+  font-size:  40px;
+  font-family: "tungienw05-medium", "Oswald", sans-serif;
+}
+.golu8{
+  background-color: #8e2d8d !important;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+ .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} 
+ .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  width: 18rem;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+element.style {
+    width: 18rm;
+}
+.accordion-body {
+  left: 34%;
+  position: absolute;
+  padding: 10%;
+  margin: -6%;
+
+}
+.text-center{
+padding: 5%;
+padding-left: 14%;
+font-family: myriad-pro, Arial;
+
+}
+.accordion--inverted{
+  font-weight: 100;
+  color: #7E7E7E;
+  right: 20%;
+  margin-bottom: -4%;
+  /* display: flix; */
+  
+}
+.h1, h1 {
+        font-size: 4.5rem;
+    }
+    .m-20 {
+    margin: 4rem !important;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* .image {
+  display: block;
+  width: 0%;
+  height: auto;
+} */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  right: -10;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: auto;
+  height: 0;
+  transition: .5s ease;
+} 
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+            display: flex;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .single-image img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px;
+            height: 100%;
+        }
+        .grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+     
+        .bg-dark {
+            background-color: #343a40;
+        }
+        .text-white {
+            color: white;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+}
+.wrapper {
+  transition: transform 1s; /* Adjust the duration as needed */
+  cursor: pointer;
+ 
+}
+
+.wrapper:hover {
+  transform: rotate(720deg);
+ 
+}
+
+.image{
+  width: 100%;
+}
+
+.well{
+  top: 10%;
+  position: absolute;
+  color: white;
+  margin-left: 5%;
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10 !important;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 49%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.single-image:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+/* .text {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 10%;
+  left: 10;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "tungienw05-medium", "Oswald", sans-serif;
+} */
+.golu {
+  position: absolute;
+  bottom: 312;
+  left: 50%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image2:hover .golu {
+  height: 313px;
+  cursor: pointer;
+}
+.image-box {
+  position: absolute;
+  bottom: 312;
+  left: 849px;  
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image3:hover .image-box {
+  height: 50%;
+  cursor: pointer;
+}
+.image-box4{
+  position: absolute;
+  bottom: -0;
+  left: 570px;  
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image4:hover .image-box4 {
+  height: 50%;
+  cursor: pointer;
+}
+.image-box5{
+  position: absolute;
+  bottom: -0;
+  left: 849px;  
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image5:hover .image-box5 {
+  height: 50%;
+  cursor: pointer;
+}
+.container {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+  
+    
+  }
+  
+  .centertxt {
+    position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  }
+
+  .imgonhover{
+    width: inherit;
+     object-fit: cover;
+  }
+  .imgonhover{
+    height: 70%;
+  }
+
+/* element.style {
+    visibility: visible;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+} */
+.promo-video-wrapper {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+/* .bg-sapphire-dark {
+    background-color: #fff;
+}
+.bottom2:hover {
+  background-color: #061838;
+  border-color: transparent !important;
+  transition: 0.5s;
+ 
+ } */
+ .mb10{
+  font-size: 50;
+}
+
+.our-purpose {
+    padding: 10px;
+    font-size: 24px;
+    border: 3px solid #92d1ff;
+    position: relative;
+    margin-top: 0%;
+    font-family: myriad-pro, Arial;
+    height: 280px;
+   
+}
+.purpose:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 56px;
+    width: 45px;
+    overflow: hidden;
+    z-index: 10;
+}
+.our-purpose::before {
+    right: -23px;
+    top: -23px;
+    transform: rotate(-45deg);
+    
+}
+.purpose:before {
+    border-left: solid 4px #92d1ff;
+
+}
+.our-purpose::after {
+    bottom: -23px;
+    left: -23px;
+    transform: rotate(135deg);
+}.our-purpose:after, .our-purpose:before {
+    border-left: solid 3px #92d1ff;
+  
+}
+.our-purpose:after, .our-purpose:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .buttom1{
+    letter-spacing: 0.1em;
+    padding-top: 0.rem;
+    padding-bottom: 0.0rem;
+    width: 64%;
+    font-size: 33px;
+    border-color: #fff;
+  }
+  .buttom1:hover{
+    background-color: #023b8b;
+    transition: 0.5s;
+    font-weight: 300;
+    margin-right: 10%;
+  }
+  .container-fluid {
+  padding: 07%;
+
+}
+
+.icon--3d {
+  width:148px; /* Adjust as needed */
+  height: auto;
+  right: 42%;
+  position: absolute;
+}
+
+.accordion-body2 {
+ text-align: center;
+  font-family: tungstenw05-medium, Oswald, sans-serif;
+}
+
+.accordion-body {
+  font-size: 1.8rem; /* Adjust as needed */
+   margin-right: 18%;
+    left: 38%;
+   position: absolute;
+   padding: 10%;
+   margin: -9%;
+   font-family: tungstenw05-medium, Oswald, sans-serif;
+}
+
+/* .ms-3 {
+    margin-left: 30rem !important;
+} */
+/* .counts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+} */
+
+
+
+
+
+
+
+
+ 
+
+</style>
+</head>
+<body>
+     <div id="carouselExampleCaptions" class="carousel slide">  
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="customnav">
+
+          <!-- <a href=""> -->
+            <div class="row">
+              <div class="col-10">
+                <img class="navbar-brand mark" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/media-resources/infosys-logo-PNG.png" alt="logo">
+              </div>
+              <div class="col-2">
+                <img class="mtr" src="images.png" width="20px" height="20px" alt="mtr">
+              </div>
+            </div>
+
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="item" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/advanced-ai-led-innovations-roland-garros2024-lead.jpg" alt="slideshow">
+            <div class="carousel-caption fd">
+             <p><h2>Game, Set, Al:Infosys Brings <br/>
+              Advanced Al-led Innivations to<br/>Roland-Garros 2024</h2></p>
+              <button class="buttom--blue">READ MORE</button>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img class="item" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/next-gen-fan-experiences-lead.jpg"  alt="show">
+            <div class="carousel-caption fd">
+              <p><h2>Infosys Partnears with Formula E to <br>
+               Enable Next Gen, AI-Powered Fan <br>Experiences</h2></p>
+               <button class="buttom--blue">KNOW MORE</button>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img class="item" src="https://www.infosys.com/content/dam/infosys-web/en/championsevolve/iga-lead.jpg"  alt="show">
+            <div class="carousel-caption fd">
+              <p><h2>Champions Evolve, <br> DIGITAL-FIRST | CLOUD-FIRST | AI-FIRST</h2></p>
+              <button class="buttom--blue">KNOW MORE</button>
+            </div>
+       
+          </div>
+        </div>
+      </div>
+       <div class="row  text-white accordion--ready">
+   <div class="col-6 ">
+      <div style=" Padding-left: 11VW; padding-top: 7vW;">
+        <h1 class="cancellation td">Digital Operating Model</h1><br/>
+        <em>Build vital capbilities to deliver digital outcoms</em><br><br>
+        <button class="bottom-left" type="button">EXPLORE</button>
+        <p class="p-2" style="color: #cec1c1f7;">CASE STUDIES </p>
+     </div>
+     <p class="row"><span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;"> Pfizer's journey towards 
+     increased productivity, powered
+     by AI. <br> <br><a href="" class="kamal text-white-50">VIEW</a></span> 
+     <span class="col fw-bold">A government that contributes 
+     to the joy of pranting. <br><br> <br> <br><a href="" class="kamal text-white-50">VIEW</a></span></p>
+</div>
+
+
+    <div class="col-6">
+      <img class="img-holder back" src="digital-capabilities-lead.webp" alt="show" height="75%">
+   </div>
+</div>
+<div class="row  text-white accordion--ready" style="background-color: #0271b1 !important;">
+ <div class="col-6 pt-5">
+  <img class="img-holder back" src="img22.webp" alt="show"  width= "80%">
+  </div>
+
+  <div class="col-6 ">
+    <div style=" Padding-left: 1VW; padding-top: 6vW;">
+    <h1 class="cancellation td td">Digital Core<br>Copbilities</h1><br/>
+    <em class="cancel-edition">For the AI-first Enterprise</em><br> <br>
+    <button class="bottom-left">EXPLORE</button>
+    <p class="p-2" style="color: #cec1c1f7;"> <b>CASE STUDIES</b> </p>
+  </div>
+  <p class="row">
+ <span class="col" style="padding-left:2vW;font-weight: 900; width: 50vw; margin-right: -10vw;">A tranformation
+  story of<br>BSF agriculture <br> solution to disigen footer <br><a href="" class="kamal text-white-50">VIEW</a></span> 
+<span class="col fw-bold">NN Life Insurance <br> Company Partnears with <br> infror for its Cloud and
+  <br><br><br><a href="" class="kamal text-white-50">VIEW</a></span></p><br>
+  </div>
+  </div>
+
+
+
+
+  <div class="row h-100 text-white golu8">
+    <div class="col-6 pt-5">
+      <div style=" Padding-left: 11VW; padding-top:3vW;">
+         <h2 class="home-second-heading white-color mb20 mb-xs-10" id="empowering0">Empowering Talent Transformations</h2><br>
+         <em class="cancel-edition">Embrace the talent revolution to <br> <br> remain relevant in the</em><br><br>
+         <button class="bottom-left" type="button">EXPLORE</button>
+         <p class="p-2" style="color: #cec1c1f7;"> <b>INSIGHTS</b></p>
+      </div>
+      <p class="row"><span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;">Improving productivity <br> with digital field
+     <br> <br><a href="" class="kamal text-white-50">VIEW</a></span> 
+     <span class="col fw-bold">Developing talent for our <br> digital future
+     <br><br><br><br><a href="" class="kamal text-white-50">VIEW</a></span></p>
+     </div>
+     <div class="col-6">
+     <img class="img-holder back accordion--tabs" src="./images/talent-transformations-lead3.webp" alt="show" height="75%">
+   </div>
+</div>
+
+
+
+
+<div class="container-fluid">
+ <div class="row">
+   <div class="col w-10">
+    <img class="icon--3d w-50  accordion-body" src="./images/vertical-line1.png" alt="show">
+    <h1 class="text-center m-5 w-30">The next</h1>
+    <p class="dfjk text-center accordion--inverted">We bring you
+      powerful advantages <br> to navigate your digital <br> transformation</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="container-fluid mt-3"> -->
+
+  <div class="container">
+    <div class="col-6 single-image">
+        <img src="./images/experience.webp" alt="show" class="single-image">
+        <div class="col-6 overlay"><h3 class="color text-white m-5">Experiences <br><br>Design-led transformation.from brand to <br> experience</h3>
+        <p class="color text-white m-5">Create unified digital experiences to enaghance <br> customer experience to build loyalty</p></div>
+    </div>
+    
+    
+        <div class="col-6 grid">
+        <div class="p-6 bg-dark text-white">
+          <div class="image-wrapper image2">
+            <img src="./images/innovate.jpg" alt="show" class="image2">
+            <div class="col-6 golu"><h3 class="color text-white m-3">Insight <br><br>Do 100x more it <br>yourself</h3>
+            <p class="color text-white m-4">Build and analytics-driven <br>enterprise to monetize <br> data</p>
+          </div>
+       </div>
+     </div>
+          
+    
+         <div class="p-6 bg-dark text-white image3">
+            <img src="./images/insight.jpg" alt="show" class="image3">
+            <div class="col-6 image-box"><h3  class="color text-white m-3">Innovate<br>Bridge the physical <br> and diigital,<br>Software and platforms</h3>
+            <p class="color text-white m-3">Engineer digital-first <br> products and offerings <br> to creat new revenue</p></div>
+          </div>
+        
+          
+          <div class="p-6 bg-dark text-white image4">
+            <img src="./images/1713953224211.jpeg" alt="show" class="image4">
+           <div class="col-6 image-box4"><h3 class="color text-white m-3">Accelerate <br>Keep your core. <br>Keep Innovating</h3>
+               <p class="color text-white m-3">Find your path distruptive <br>renewal It Indscapes</p></div>
+         </div>
+
+
+          <div class="p-6 bg-dark text-white image5">
+            <img src="./images/assure.jpg" alt="show" class="image5">
+            <div class="col-6 image-box5"><h3 class="color text-white m-3">Assure <br>Digital-trust.Assured.</h3>
+            <p class="col-6 text-white m-3">to be the catalyst for groth by solving <br> complax cybersecurity problem, <br>minimizing <br>resk  and building  cyber resilience for your.</p></div>
+         </div>
+       </div>
+     </div>
+ 
+
+        <div class="row p-5 m-3">
+          <div class="col-3">
+            <h3>Service <br>offerings</h3>
+            <img src="	https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+          <div class="col-3">
+            <h3>Explore <br>Industries</h3>
+           <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+          <div class="col-3">
+            <h3>Our <br>plateform</h3>
+            <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+          <div class="col-3">
+            <h3>Navigate <br>your<br>Next</h3>
+            <img src="	https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+        </div>
+  
+
+
+
+        <!-- <div class="container">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png" alt="Snow"  class="imgonhover" >
+          <div class="centertxt">
+            <h2 class="text4 mr-20">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
+           <button class="buttom1">READ MORE</button> 
+          </div>
+          
+        </div>  -->
+        <div class="container">
+          <div class="centertxt">
+            <h2 class="text4 mr-20">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
+            <!-- <button class="buttom1">READ MORE</button> -->
+          </div>
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png" alt="Snow" class="imgonhover">
+        </div>
+        
+        
+
+
+    
+        <div class=" our-purpose container">
+          <div class="  text-center">
+            <h2 class="title-sml mb-20" style="color: black; font-family: tungstenw05-medium, Oswald, sans-serif;font-size: 55px;">Our Purpose:</h2>
+            <p  style="color: black; font-size: 30px;"class="para-ovr pt0 fontweight800" style="font-family: fontsizetungstenw05-medium, Oswald, sans-serif;;">To amplify human potential and create the next opportunity for
+              people, businesses and communities</p>
+          </div>
+        </div> 
+      
+
+
+
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <img class="icon--3d" src="./images/vertical-line1.png" alt="show">  </div>
+              <h1 class="accordion-body2 ms-3">About Us</h1>
+            </div>
+            <div class="col-12">
+              <p class="accordion-body">A global leader in Next-Generation <br> digital Services and consulting</p>
+               </div>
+            <div class="counts">
+              <div class="padding">
+              <h1>56+</h1>
+              <p>countries where we have <br> trusting clients</p>
+            </div> 
+     
+              <div class=" padding">
+                <h1>US$18.6</h1>
+                <p>billion total revenue (LTM)</p>
+             </div>
+              <div class="padding">
+                  <h1>5,575,490+</h1>
+                  <p>Training (days) conducted for <br> employees, globally</p>
+              </div>
+            </div>
+
+        </div>
+
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
