@@ -1,0 +1,239 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=5.0" />
+    <title>Jai Ganesh</title>
+    <link rel="icon" href="/images/jaisreeram.jpg" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        background-color: white;
+        color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      .id {
+        background-color: yellowgreen;
+        padding: 10px 10px;
+        border-radius: 8px;
+      }
+
+      .timerDisplay {
+        font-size: 60px;
+        font-weight: 500px;
+        
+      }
+
+      .buttons {
+        margin-top: 30px;
+      }
+
+      .btn {
+        font-size: 30px;
+        background-color: white;
+        border: none;
+        background-color: var(--clr);
+        padding: 10px 20px;
+        margin-inline: 20px;
+        border-radius: 8px;
+        margin-inline: 6px;
+        cursor: pointer;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <div class="id">
+      <div class="timerDisplay">12 : 00 : 00 PM</div>
+    </div>
+    <div class="buttons">
+      <button id="stopBtn" class="btn" style="--clr: red">Stop</button>
+      <button id="StartBtn" class="btn" style="--clr: green">Start</button>
+      <button id="ResetBtn" class="btn" style="--clr: blue">Reset</button>
+    </div>
+  
+    
+    <script>
+      let timerDisplay = document.querySelector(".timerDisplay");
+      let stopBtn = document.getElementById("stopBtn");
+      let StartBtn = document.getElementById("StartBtn");
+      let ResetBtn = document.getElementById("ResetBtn");
+
+      function updateDisplay() {
+          timerDisplay.textContent = `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+      let hrs = 0;
+      let secs = 0;
+      let mins = 0;
+      let timerId;
+
+      
+
+      function startTimer() {
+        timerId = setInterval(()=>{
+            secs++;
+            if(secs >= 60 ){
+              secs = 0;
+              mins++;
+            }
+            if(mins >= 60){
+              mins = 0;
+              hrs++;
+            }
+            if(hrs >= 60)
+
+            updateDisplay();
+
+        }, 10)
+      }
+
+
+
+      function stopTimer(){
+        clearInterval(timerId);
+      }
+
+
+      function resetTimer(){
+        clearInterval(timerId);
+        hrs = 0;
+        mins = 0;
+        secs = 0;
+        updateDisplay();
+
+
+      }
+
+  
+        
+
+      // startbtn instruction 
+      StartBtn.addEventListener('click', startTimer );
+
+      // stop button instruction 
+
+      stopBtn.addEventListener("click", stopTimer );
+
+      // reset button instruction 
+
+      ResetBtn.addEventListener("click", resetTimer);
+    </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jai Ganesh</title>
+    <link rel="icon" href="/images/jaisreeram.jpg" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        background-color: white;
+        color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      .id {
+        background-color: yellowgreen;
+        padding: 10px 10px;
+        border-radius: 8px;
+      }
+
+      .timerDisplay {
+        font-size: 60px;
+        font-weight: 500;
+      }
+
+      .buttons {
+        margin-top: 30px;
+      }
+
+      .btn {
+        font-size: 30px;
+        background-color: white;
+        border: none;
+        background-color: var(--clr);
+        padding: 10px 20px;
+        margin-inline: 20px;
+        border-radius: 8px;
+        margin-inline: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="id">
+      <div class="timerDisplay">12:00:00 PM</div>
+    </div>
+    <div class="buttons">
+      <button id="stopBtn" class="btn" style="--clr: red">Stop</button>
+      <button id="startBtn" class="btn" style="--clr: green">Start</button>
+      <button id="resetBtn" class="btn" style="--clr: blue">Reset</button>
+    </div>
+    
+    <script>
+      let timerDisplay = document.querySelector(".timerDisplay");
+      let stopBtn = document.getElementById("stopBtn");
+      let startBtn = document.getElementById("startBtn");
+      let resetBtn = document.getElementById("resetBtn");
+
+      let timerId;
+
+      function updateDisplay() {
+        const now = new Date();
+        let hrs = now.getHours();
+        let mins = now.getMinutes();
+        let secs = now.getSeconds();
+        let ampm = hrs >= 12 ? 'PM' : 'AM';
+        hrs = hrs % 12;
+        hrs = hrs ? hrs : 12; // the hour '0' should be '12'
+        timerDisplay.textContent = `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')} ${ampm}`;
+      }
+
+      function startTimer() {
+        if (!timerId) {
+          updateDisplay();
+          timerId = setInterval(updateDisplay, 1000);
+        }
+      }
+
+      function stopTimer(){
+        clearInterval(timerId);
+        timerId = null;
+      }
+
+      function resetTimer(){
+        stopTimer();
+        timerDisplay.textContent = '12:00:00 PM';
+      }
+
+      startBtn.addEventListener('click', startTimer);
+      stopBtn.addEventListener('click', stopTimer);
+      resetBtn.addEventListener('click', resetTimer);
+
+      // Start the clock immediately on page load
+      startTimer();
+    </script>
+  </body>
+</html>

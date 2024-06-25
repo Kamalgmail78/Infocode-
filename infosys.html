@@ -247,8 +247,8 @@ font-family: myriad-pro, Arial;
   font-weight: 100;
   color: #7E7E7E;
   right: 20%;
-  margin-bottom: 0;
-  display: flix;
+  margin-bottom: -4%;
+  /* display: flix; */
   
 }
 .h1, h1 {
@@ -279,13 +279,26 @@ font-family: myriad-pro, Arial;
   height: 0;
   transition: .5s ease;
 } 
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .container {
             display: flex;
         }
         .col-6 {
             width: 50%;
         }
-        .single-image img {
+        .single-image img{
             width: 100%;
             height: 100%;
             display: block;
@@ -310,10 +323,280 @@ font-family: myriad-pro, Arial;
             color: white;
         }
         .container {
-    position: relative;
-    width: 95%;
+            position: relative;
+            width: 100%;
+}
+.wrapper {
+  transition: transform 1s; /* Adjust the duration as needed */
+  cursor: pointer;
+ 
 }
 
+.wrapper:hover {
+  transform: rotate(720deg);
+ 
+}
+
+.image{
+  width: 100%;
+}
+
+.well{
+  top: 10%;
+  position: absolute;
+  color: white;
+  margin-left: 5%;
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10 !important;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 49%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.single-image:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+/* .text {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 10%;
+  left: 10;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "tungienw05-medium", "Oswald", sans-serif;
+} */
+.golu {
+  position: absolute;
+  bottom: 312;
+  left: 50%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image2:hover .golu {
+  height: 313px;
+  cursor: pointer;
+}
+.image-box {
+  position: absolute;
+  bottom: 312;
+  left: 849px;  
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image3:hover .image-box {
+  height: 50%;
+  cursor: pointer;
+}
+.image-box4{
+  position: absolute;
+  bottom: -0;
+  left: 570px;  
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image4:hover .image-box4 {
+  height: 50%;
+  cursor: pointer;
+}
+.image-box5{
+  position: absolute;
+  bottom: -0;
+  left: 849px;  
+  right: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */ 
+  overflow: hidden;
+  width: 280;
+  height: 0;
+  transition: .5s ease;
+}
+.image5:hover .image-box5 {
+  height: 50%;
+  cursor: pointer;
+}
+.container {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+  
+    
+  }
+  
+  .centertxt {
+    position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  }
+
+  .imgonhover{
+    width: inherit;
+     object-fit: cover;
+  }
+  .imgonhover{
+    height: 70%;
+  }
+
+/* element.style {
+    visibility: visible;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+} */
+.promo-video-wrapper {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+/* .bg-sapphire-dark {
+    background-color: #fff;
+}
+.bottom2:hover {
+  background-color: #061838;
+  border-color: transparent !important;
+  transition: 0.5s;
+ 
+ } */
+ .mb10{
+  font-size: 50;
+}
+
+.our-purpose {
+    padding: 10px;
+    font-size: 24px;
+    border: 3px solid #92d1ff;
+    position: relative;
+    margin-top: 0%;
+    font-family: myriad-pro, Arial;
+    height: 280px;
+   
+}
+.purpose:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 56px;
+    width: 45px;
+    overflow: hidden;
+    z-index: 10;
+}
+.our-purpose::before {
+    right: -23px;
+    top: -23px;
+    transform: rotate(-45deg);
+    
+}
+.purpose:before {
+    border-left: solid 4px #92d1ff;
+
+}
+.our-purpose::after {
+    bottom: -23px;
+    left: -23px;
+    transform: rotate(135deg);
+}.our-purpose:after, .our-purpose:before {
+    border-left: solid 3px #92d1ff;
+  
+}
+.our-purpose:after, .our-purpose:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .buttom1{
+    letter-spacing: 0.1em;
+    padding-top: 0.rem;
+    padding-bottom: 0.0rem;
+    width: 64%;
+    font-size: 33px;
+    border-color: #fff;
+  }
+  .buttom1:hover{
+    background-color: #023b8b;
+    transition: 0.5s;
+    font-weight: 300;
+    margin-right: 10%;
+  }
+  .container-fluid {
+  padding: 07%;
+
+}
+
+.icon--3d {
+  width:148px; /* Adjust as needed */
+  height: auto;
+  right: 42%;
+  position: absolute;
+}
+
+.accordion-body2 {
+ text-align: center;
+  font-family: tungstenw05-medium, Oswald, sans-serif;
+}
+
+.accordion-body {
+  font-size: 1.8rem; /* Adjust as needed */
+   margin-right: 18%;
+    left: 38%;
+   position: absolute;
+   padding: 10%;
+   margin: -9%;
+   font-family: tungstenw05-medium, Oswald, sans-serif;
+}
+
+/* .ms-3 {
+    margin-left: 30rem !important;
+} */
+/* .counts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+} */
+
+
+
+
+
+
+
+
+ 
 
 </style>
 </head>
@@ -367,26 +650,24 @@ font-family: myriad-pro, Arial;
         </div>
       </div>
        <div class="row  text-white accordion--ready">
-    <div class="col-6 ">
+   <div class="col-6 ">
       <div style=" Padding-left: 11VW; padding-top: 7vW;">
-      <h1 class="cancellation td">Digital Operating Model</h1><br/>
-      <em>Build vital capbilities to deliver digital outcoms</em><br><br>
-      <button class="bottom-left" type="button">EXPLORE</button>
-      <p class="p-2" style="color: #cec1c1f7;">CASE STUDIES </p>
-      
-    </div>
-    <p class="row">
-   <span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;"> Pfizer's journey towards 
-    increased productivity, powered
-    by AI. <br> <br><a href="" class="kamal text-white-50">VIEW</a></span> 
-  <span class="col fw-bold">A government that contributes 
-    to the joy of pranting. <br><br> <br> <br> <a href="" class="kamal text-white-50">VIEW</a></span></p>
-    
+        <h1 class="cancellation td">Digital Operating Model</h1><br/>
+        <em>Build vital capbilities to deliver digital outcoms</em><br><br>
+        <button class="bottom-left" type="button">EXPLORE</button>
+        <p class="p-2" style="color: #cec1c1f7;">CASE STUDIES </p>
+     </div>
+     <p class="row"><span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;"> Pfizer's journey towards 
+     increased productivity, powered
+     by AI. <br> <br><a href="" class="kamal text-white-50">VIEW</a></span> 
+     <span class="col fw-bold">A government that contributes 
+     to the joy of pranting. <br><br> <br> <br><a href="" class="kamal text-white-50">VIEW</a></span></p>
 </div>
-    <div class="col-6">
-<img class="img-holder back" src="digital-capabilities-lead.webp" alt="show" height="75%">
 
-</div>
+
+    <div class="col-6">
+      <img class="img-holder back" src="digital-capabilities-lead.webp" alt="show" height="75%">
+   </div>
 </div>
 <div class="row  text-white accordion--ready" style="background-color: #0271b1 !important;">
  <div class="col-6 pt-5">
@@ -408,29 +689,34 @@ font-family: myriad-pro, Arial;
   </div>
   </div>
 
-<div class="row h-100 text-white golu8">
+
+
+
+  <div class="row h-100 text-white golu8">
     <div class="col-6 pt-5">
       <div style=" Padding-left: 11VW; padding-top:3vW;">
          <h2 class="home-second-heading white-color mb20 mb-xs-10" id="empowering0">Empowering Talent Transformations</h2><br>
-         <em class="cancel-edition">Embrace the talent revolution to remain relevant in the</em><br><br>
+         <em class="cancel-edition">Embrace the talent revolution to <br> <br> remain relevant in the</em><br><br>
          <button class="bottom-left" type="button">EXPLORE</button>
          <p class="p-2" style="color: #cec1c1f7;"> <b>INSIGHTS</b></p>
       </div>
-      <p class="row">
-     <span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;">Improving productivity <br> with digital field
+      <p class="row"><span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;">Improving productivity <br> with digital field
      <br> <br><a href="" class="kamal text-white-50">VIEW</a></span> 
      <span class="col fw-bold">Developing talent for our <br> digital future
      <br><br><br><br><a href="" class="kamal text-white-50">VIEW</a></span></p>
-  </div>
-    <div class="col-6">
-   <img class="img-holder back accordion--tabs" src="../public/images/talent-transformations-lead3.webp" alt="show" height="75%">
- </div>
+     </div>
+     <div class="col-6">
+     <img class="img-holder back accordion--tabs" src="./images/talent-transformations-lead3.webp" alt="show" height="75%">
+   </div>
 </div>
+
+
+
 
 <div class="container-fluid">
  <div class="row">
    <div class="col w-10">
-    <img class="icon--3d w-50  accordion-body" src="../public/images/vertical-line1.png" alt="show">
+    <img class="icon--3d w-50  accordion-body" src="./images/vertical-line1.png" alt="show">
     <h1 class="text-center m-5 w-30">The next</h1>
     <p class="dfjk text-center accordion--inverted">We bring you
       powerful advantages <br> to navigate your digital <br> transformation</p>
@@ -444,54 +730,137 @@ font-family: myriad-pro, Arial;
 
   <div class="container">
     <div class="col-6 single-image">
-        <img src="../public/images/experience.webp" alt="show">
-        <div class="col-6  overlay"><h3 class="color text-white m-5">Experiences <br> <br>
-       Design-led transformation.from brand to <br> experience</h3>
-          <p class="color text-white m-5">Create unified digital experiences to enaghance <br> customer experience to build loyalty</p>
+        <img src="./images/experience.webp" alt="show" class="single-image">
+        <div class="col-6 overlay"><h3 class="color text-white m-5">Experiences <br><br>Design-led transformation.from brand to <br> experience</h3>
+        <p class="color text-white m-5">Create unified digital experiences to enaghance <br> customer experience to build loyalty</p></div>
+    </div>
+    
+    
+        <div class="col-6 grid">
+        <div class="p-6 bg-dark text-white">
+          <div class="image-wrapper image2">
+            <img src="./images/innovate.jpg" alt="show" class="image2">
+            <div class="col-6 golu"><h3 class="color text-white m-3">Insight <br><br>Do 100x more it <br>yourself</h3>
+            <p class="color text-white m-4">Build and analytics-driven <br>enterprise to monetize <br> data</p>
+          </div>
+       </div>
+     </div>
+          
+    
+         <div class="p-6 bg-dark text-white image3">
+            <img src="./images/insight.jpg" alt="show" class="image3">
+            <div class="col-6 image-box"><h3  class="color text-white m-3">Innovate<br>Bridge the physical <br> and diigital,<br>Software and platforms</h3>
+            <p class="color text-white m-3">Engineer digital-first <br> products and offerings <br> to creat new revenue</p></div>
+          </div>
+        
+          
+          <div class="p-6 bg-dark text-white image4">
+            <img src="./images/1713953224211.jpeg" alt="show" class="image4">
+           <div class="col-6 image-box4"><h3 class="color text-white m-3">Accelerate <br>Keep your core. <br>Keep Innovating</h3>
+               <p class="color text-white m-3">Find your path distruptive <br>renewal It Indscapes</p></div>
+         </div>
+
+
+          <div class="p-6 bg-dark text-white image5">
+            <img src="./images/assure.jpg" alt="show" class="image5">
+            <div class="col-6 image-box5"><h3 class="color text-white m-3">Assure <br>Digital-trust.Assured.</h3>
+            <p class="col-6 text-white m-3">to be the catalyst for groth by solving <br> complax cybersecurity problem, <br>minimizing <br>resk  and building  cyber resilience for your.</p></div>
+         </div>
+       </div>
+     </div>
+ 
+
+        <div class="row p-5 m-3">
+          <div class="col-3">
+            <h3>Service <br>offerings</h3>
+            <img src="	https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+          <div class="col-3">
+            <h3>Explore <br>Industries</h3>
+           <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+          <div class="col-3">
+            <h3>Our <br>plateform</h3>
+            <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+          <div class="col-3">
+            <h3>Navigate <br>your<br>Next</h3>
+            <img src="	https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+          </div>
+        </div>
+  
+
+
+
+        <!-- <div class="container">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png" alt="Snow"  class="imgonhover" >
+          <div class="centertxt">
+            <h2 class="text4 mr-20">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
+           <button class="buttom1">READ MORE</button> 
+          </div>
+          
+        </div>  -->
+        <div class="container">
+          <div class="centertxt">
+            <h2 class="text4 mr-20">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
+            <!-- <button class="buttom1">READ MORE</button> -->
+          </div>
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png" alt="Snow" class="imgonhover">
         </div>
         
-
-    </div>
-    <div class="col-6 grid">
-        <div class="p-6 bg-dark text-white">
-          <div class="image-wrapper">
-            <img src="../public/images/innovate.jpg" alt="show">
-            <div class="">Overlay Content</div>
-            </div>
-           </div>
-          
-               
-              
-             
-        <div class="p-6 bg-dark text-white">
-            <img src="../public/images/insight.jpg" alt="show">
-        </div>
-        <div class="p-6 bg-dark text-white">
-            <img src="../public/images/1713953224211.jpeg" alt="show">
-        </div>
-        <div class="p-6 bg-dark text-white">
-            <img src="../public/images/assure.jpg" alt="show">
-        </div>
-    </div>
-</div>
+        
 
 
-
-
-
- 
-  
-  
-     
- 
-       
-       
+    
+        <div class=" our-purpose container">
+          <div class="  text-center">
+            <h2 class="title-sml mb-20" style="color: black; font-family: tungstenw05-medium, Oswald, sans-serif;font-size: 55px;">Our Purpose:</h2>
+            <p  style="color: black; font-size: 30px;"class="para-ovr pt0 fontweight800" style="font-family: fontsizetungstenw05-medium, Oswald, sans-serif;;">To amplify human potential and create the next opportunity for
+              people, businesses and communities</p>
+          </div>
+        </div> 
       
-  
-  
+
+
+
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <img class="icon--3d" src="./images/vertical-line1.png" alt="show">  </div>
+              <h1 class="accordion-body2 ms-3">About Us</h1>
+            </div>
+            <div class="col-12">
+              <p class="accordion-body">A global leader in Next-Generation <br> digital Services and consulting</p>
+               </div>
+            <div class="counts">
+              <div class="padding">
+              <h1>56+</h1>
+              <p>countries where we have <br> trusting clients</p>
+            </div> 
+     
+              <div class=" padding">
+                <h1>US$18.6</h1>
+                <p>billion total revenue (LTM)</p>
+             </div>
+              <div class="padding">
+                  <h1>5,575,490+</h1>
+                  <p>Training (days) conducted for <br> employees, globally</p>
+              </div>
+            </div>
+
+        </div>
+
  
+
+     
+    
+          
   
 
+    
+        
 
 
 
@@ -499,6 +868,12 @@ font-family: myriad-pro, Arial;
 </div>
 
 </div>
+
+
+
+ 
+
+
 
 
 </body>

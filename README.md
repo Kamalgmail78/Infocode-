@@ -1,2 +1,0 @@
-# Infocode-
-Info clone 
