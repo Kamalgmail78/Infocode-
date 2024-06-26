@@ -566,12 +566,13 @@ font-family: myriad-pro, Arial;
 .accordion-body2 {
  text-align: center;
   font-family: tungstenw05-medium, Oswald, sans-serif;
+ 
 }
 
 .accordion-body {
   font-size: 1.8rem; /* Adjust as needed */
    margin-right: 18%;
-    left: 38%;
+   left: 38%;
    position: absolute;
    padding: 10%;
    margin: -9%;
@@ -588,15 +589,24 @@ font-family: myriad-pro, Arial;
 
 
 } */
+.active{
+  position: relative;
+  margin-left: 50px;
+  font-size: 40px;
+  color: #353232bb;
+  left: 10%;
+  font-family: tungstenw05-medium, Oswald, sans-serif;
+}
+/* .h2-heading{
+  font-family: tungstenw05-medium, Oswald, sans-serif;
+} */
+.row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 33%;
+    padding-right: 16px;
+}
 
-
-
-
-
-
-
-
- 
 
 </style>
 </head>
@@ -610,7 +620,6 @@ font-family: myriad-pro, Arial;
         </div>
         <div class="customnav">
 
-          <!-- <a href=""> -->
             <div class="row">
               <div class="col-10">
                 <img class="navbar-brand mark" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/media-resources/infosys-logo-PNG.png" alt="logo">
@@ -624,7 +633,7 @@ font-family: myriad-pro, Arial;
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="item" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/advanced-ai-led-innovations-roland-garros2024-lead.jpg" alt="slideshow">
+            <img class="item" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/advanced-ai-led-innovations-roland-garros2024-lead.jpg" alt="show">
             <div class="carousel-caption fd">
              <p><h2>Game, Set, Al:Infosys Brings <br/>
               Advanced Al-led Innivations to<br/>Roland-Garros 2024</h2></p>
@@ -690,8 +699,6 @@ font-family: myriad-pro, Arial;
   </div>
 
 
-
-
   <div class="row h-100 text-white golu8">
     <div class="col-6 pt-5">
       <div style=" Padding-left: 11VW; padding-top:3vW;">
@@ -710,9 +717,6 @@ font-family: myriad-pro, Arial;
    </div>
 </div>
 
-
-
-
 <div class="container-fluid">
  <div class="row">
    <div class="col w-10">
@@ -723,19 +727,13 @@ font-family: myriad-pro, Arial;
     </div>
   </div>
 </div>
-
-
-
-<!-- <div class="container-fluid mt-3"> -->
-
-  <div class="container">
+<div class="container">
     <div class="col-6 single-image">
         <img src="./images/experience.webp" alt="show" class="single-image">
         <div class="col-6 overlay"><h3 class="color text-white m-5">Experiences <br><br>Design-led transformation.from brand to <br> experience</h3>
         <p class="color text-white m-5">Create unified digital experiences to enaghance <br> customer experience to build loyalty</p></div>
     </div>
-    
-    
+   
         <div class="col-6 grid">
         <div class="p-6 bg-dark text-white">
           <div class="image-wrapper image2">
@@ -769,7 +767,6 @@ font-family: myriad-pro, Arial;
        </div>
      </div>
  
-
         <div class="row p-5 m-3">
           <div class="col-3">
             <h3>Service <br>offerings</h3>
@@ -789,17 +786,6 @@ font-family: myriad-pro, Arial;
           </div>
         </div>
   
-
-
-
-        <!-- <div class="container">
-          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png" alt="Snow"  class="imgonhover" >
-          <div class="centertxt">
-            <h2 class="text4 mr-20">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
-           <button class="buttom1">READ MORE</button> 
-          </div>
-          
-        </div>  -->
         <div class="container">
           <div class="centertxt">
             <h2 class="text4 mr-20">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
@@ -807,50 +793,40 @@ font-family: myriad-pro, Arial;
           </div>
           <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png" alt="Snow" class="imgonhover">
         </div>
-        
-        
-
-
-    
+ 
         <div class=" our-purpose container">
           <div class="  text-center">
             <h2 class="title-sml mb-20" style="color: black; font-family: tungstenw05-medium, Oswald, sans-serif;font-size: 55px;">Our Purpose:</h2>
-            <p  style="color: black; font-size: 30px;"class="para-ovr pt0 fontweight800" style="font-family: fontsizetungstenw05-medium, Oswald, sans-serif;;">To amplify human potential and create the next opportunity for
+            <p  style="color: black; font-size: 30px;"class="para-ovr pt0 fontweight800" style="font-family: fontsizetungstenw05-medium, Oswald, sans-serif; color:  color-#353232bb;">To amplify human potential and create the next opportunity for
               people, businesses and communities</p>
           </div>
         </div> 
       
 
-
-
-
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 d-flex align-items-center">
-              <img class="icon--3d" src="./images/vertical-line1.png" alt="show">  </div>
-              <h1 class="accordion-body2 ms-3">About Us</h1>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center wow fadeInUp animated" style="visibility: visible;"> <img data-src="./images/vertical-line1.png" class="" alt="" src="/content/dam/infosys-web/en/global-resource/images/vertical-line1.png">
+              <h2 class="h2-heading">About us</h2>
+              <p class="col-lg-8 col-md-8 col-md-offset-2 para-txt light-gray mb50 font-size-70px active">A global leader in next-generation <br> digital services and consulting</p>
             </div>
-            <div class="col-12">
-              <p class="accordion-body">A global leader in Next-Generation <br> digital Services and consulting</p>
-               </div>
-            <div class="counts">
-              <div class="padding">
-              <h1>56+</h1>
-              <p>countries where we have <br> trusting clients</p>
-            </div> 
-     
-              <div class=" padding">
-                <h1>US$18.6</h1>
-                <p>billion total revenue (LTM)</p>
-             </div>
-              <div class="padding">
-                  <h1>5,575,490+</h1>
-                  <p>Training (days) conducted for <br> employees, globally</p>
+            <div class="row p-sm-0 mr-3">
+          
+              <div class="col-3 ">
+                 <span class="scrollspy-example text-center font-size-40px text-align-center">56</span>+
+                 <p class="aboutus-grid-desc">countries where we have <br> trusting clients</p>
+              
+              </div>
+              <div class="col-3">
+                <span class="scrollspy-example text-center font-size-40px">US$ 18.6</span>
+              <p>billion total revenue(LTM)</p>
+              </div>
+              <div class="col-3">
+               <span class="scrollspy-example text-center font-size-40px">5,575,490</span>+
+               <p>Training (days) conducted for <br> employees, globally</p>
               </div>
             </div>
 
-        </div>
+
+
+
 
 
 </div>
