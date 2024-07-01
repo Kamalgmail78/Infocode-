@@ -538,17 +538,62 @@ font-family: myriad-pro, Arial;
   width: 100px;  /* Set the width you desire */
   object-fit: cover; /* Ensures the image fits within the specified height and width */
 }
+.sikha {
+            display: flex;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .ansh{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .anand {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px;
+            height: 100%;
+        }
+        .anand img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+     
+       
+        .text-white {
+            color: red
+            ;
+        }
+        .sikha {
+            position: relative;
+            width: 100%;
+          }
+        
+.col-4 {
+    /* flex: 0 0 auto; */
+    width: 110.333333%;
+}
+.digital{
+  margin-left: 10px;
+  color: #40343481;
+}
+.digital2{
+  margin-right: 23%;
+  font-family: myriad-pro, Arial;
+  font-size: 50px;
+}
+.digital3{
+  margin-right: 80px;
+  position: relative;
+}
+.sdfkj{
+  right: 30px;
 
 
-
-
-
-
-
-
-
-
- 
+}
 
 </style>
 </head>
@@ -579,7 +624,7 @@ font-family: myriad-pro, Arial;
             <div class="carousel-caption fd">
              <p><h2>Game, Set, Al:Infosys Brings <br/>
               Advanced Al-led Innivations to<br/>Roland-Garros 2024</h2></p>
-              <button class="buttom--blue">READ MORE</button>
+              <button class="buttom--blue" onclick="navigateToPage()">READ MORE</button>
              </div>
           </div>
           <div class="carousel-item">
@@ -587,7 +632,8 @@ font-family: myriad-pro, Arial;
             <div class="carousel-caption fd">
               <p><h2>Infosys Partnears with Formula E to <br>
                Enable Next Gen, AI-Powered Fan <br>Experiences</h2></p>
-               <button class="buttom--blue">KNOW MORE</button>
+               <button class="buttom--blue" button type="button" onclick="document.getElementById('demo').innerHTML = date">KNOW MORE</button>
+
              </div>
           </div>
           <div class="carousel-item">
@@ -761,7 +807,13 @@ font-family: myriad-pro, Arial;
             <p>Training (days) conducted for <br> employees, globally</p></div>
         </div>
 
-  <div class="row">
+
+      
+
+
+
+
+  <!-- <div class="row">
     <div class="col-md-6 bg-warning text-white" style="padding:0px">
     <h1>,mnvjksdkv</h1>
     <h1>dsjkdsjjdsf</h1>
@@ -776,12 +828,11 @@ font-family: myriad-pro, Arial;
 
 <div class="row w-md">
 
-<div class="col-md-6  bg-danger text-white">
-<img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/quarter-results-q4fy24-thumb.jpg" class="" alt="Cinque Terre" style="width:100%;padding:0px" height="150px"></div>
-
-
+<div class="col-md-6  text-white">
+<img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/future-work2023-thumb.jpg" class="" alt="Cinque Terre" style="width:100%;padding:0px" height="150px">
+<h1>cvz</h1></div>
   
-<div class="col-md-6   text-white" style="padding: 0px;">
+<div class="col-md-6   text-white">
   <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/responsive/newdesign/cloud-applications-research.jpg" class="" alt="Cinque Terre" style="width:100%;padding:0px"></div>
 <div class="col-md-6  bg-danger text-white "  style="padding:0px">
 <img src="https://www.infosys.com/content/dam/infosys-web/en/about/esg-radar-report/esg-thumb.jpg" class="" alt="Cinque Terre" style="width:100%;padding:0px"></div>
@@ -792,16 +843,81 @@ font-family: myriad-pro, Arial;
 </div>
 </div>
 </div>
-</div>
-
-
-
-
-
-
-
-    
+</div> -->
+<div class=" container sikha bg-warning">
+  <div class="col-6">
+      h1jgjhgjh
+     
+  </div>
+  
+      <div class="col-6  anand">
+      <div class=" col-4 row">
+        <div class="image-wrapper">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/quarter-results-q4fy24-thumb.jpg"  alt="show" class="sdhf w-100rem">
+          <div class="col-6"></div>
+     </div>
+   </div>
         
+       <div class="p-6">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/future-work2023-thumb.jpg"  alt="show">
+          <div class="col-6"></div>
+        </div>
+       
+        <div class="p-6">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/about/esg-radar-report/esg-thumb.jpg"  alt="show">
+         <div class="col-6"></div>
+       </div>
+
+
+        <div class="p-6">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/responsive/newdesign/cloud-applications-research.jpg"  alt="show">
+        </div>
+     </div>
+   </div>
+
+
+
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center wow fadeInUp animated" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+     <img src="./images/vertical-line1.png" class="digital2" alt="" src="/content/dam/infosys-web/en/global-resource/images/vertical-line.png">
+    <h2 class="h2-heading digital2">Investors</h2>
+    <p class="col-lg-8 col-md-8 col-md-offset-2 para-txt light-gray mb50n fs-1 digital ">Maximizing shareholder value with
+      good corporate governance</p>
+  </div>
+
+
+   <div class="con">
+    <div class="row">
+      <div class="col">
+        <div class="position-relative p-2 ml-3 digital3">
+          <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/annual-report-2024-mob.jpg" alt="show" >
+          <h1 class="position-absolute bottom-0 start-1 text-white p-2 fs-1">Integrated Annual Report 2024</h1>
+         </div>
+         </div>
+      
+         <div class="col">
+        <h2 class="sdfkj"><b>Investor Center</b></h2>
+        <p>RESULT</p>
+          </div> 
+      </div>
+      
+      
+      
+        </div>
+
+
+
+     
+   
+  
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -811,7 +927,11 @@ font-family: myriad-pro, Arial;
 </div>
 
 
-
+<script>
+  function navigateToPage() {
+      window.location.href = 'https://your-next-page-url.com';
+  }
+</script>
  
 
 
