@@ -403,7 +403,7 @@ font-family: myriad-pro, Arial;
   height: 50%;
   cursor: pointer;
 }
-.container {
+.duck{
     position: relative;
     /* text-align: center; */
     color: white;
@@ -479,15 +479,21 @@ font-family: myriad-pro, Arial;
     letter-spacing: 0.1em;
     padding-top: 0.rem;
     padding-bottom: 0.0rem;
-    width: 64%;
-    font-size: 33px;
+    /* width: 64%; 
+    font-size: 33px;*/
     border-color: #fff;
+   height: 100px;
+    width: max-content;
+    position: relative;
+    top: 390px;
+    left: 50%;
   }
   .buttom1:hover{
     background-color: #023b8b;
     transition: 0.5s;
     font-weight: 300;
     margin-right: 10%;
+    color: #fff;
   }
   .container-fluid {
      padding: 07%; 
@@ -561,21 +567,10 @@ font-family: myriad-pro, Arial;
             height: 100%;
             object-fit: cover;
         }
-     
-       
-        .text-white {
-            color: red
-            ;
-        }
-        .sikha {
-            position: relative;
-            width: 100%;
-          }
-        
-.col-4 {
+       .col-4 {
     /* flex: 0 0 auto; */
     width: 110.333333%;
-}
+} 
 .digital{
   margin-left: 10px;
   color: #40343481;
@@ -591,10 +586,48 @@ font-family: myriad-pro, Arial;
 }
 .sdfkj{
   right: 30px;
-
-
 }
-
+.digital4{
+  font-family: myriad-pro, Arial;
+  width: 20%;
+}
+.digital5{
+  bottom: 6rem;
+  position: relative;
+  left: 5rem;
+}
+.digital6{
+  bottom: 10rem;
+  position: relative;
+  margin-left: 60%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  width: 20rem;
+} 
+.ir{
+  display: flex;
+}
+.toyi{
+  left: 47%;
+  position: absolute;
+   margin-bottom: 7px;
+   background-color: #000000;
+   color: #fff;
+   margin-bottom: 100px;
+  
+  
+}
+  .toyi:hover {
+  background: white;
+  border-color: transparent !important;
+  transition: 0.5s;
+  text-emphasis-color: white;
+  color: #000;
+ 
+ }
+ .jgkhgf{
+   margin-left: 260px;
+}
 </style>
 </head>
 <body>
@@ -622,7 +655,7 @@ font-family: myriad-pro, Arial;
           <div class="carousel-item active">
             <img class="item" src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/advanced-ai-led-innovations-roland-garros2024-lead.jpg" alt="slideshow">
             <div class="carousel-caption fd">
-             <p><h2>Game, Set, Al:Infosys Brings <br/>
+             <p><h2 class="fs-1 ">Game, Set, Al:Infosys Brings <br/>
               Advanced Al-led Innivations to<br/>Roland-Garros 2024</h2></p>
               <button class="buttom--blue" onclick="navigateToPage()">READ MORE</button>
              </div>
@@ -695,7 +728,7 @@ font-family: myriad-pro, Arial;
          <p class="p-2" style="color: #cec1c1f7;"> <b>INSIGHTS</b></p>
       </div>
       <p class="row"><span class="col" style="padding-left:12vW;font-weight: 900; width: 50vw;">Improving productivity <br> with digital field
-     <br> <br><a href="" class="kamal text-white-50">VIEW</a></span> 
+     <br> <br><a href="https://www.infosys.com/careers.html" class="kamal text-white-50">VIEW</a></span> 
      <span class="col fw-bold">Developing talent for our <br> digital future
      <br><br><br><br><a href="" class="kamal text-white-50">VIEW</a></span></p>
      </div>
@@ -756,7 +789,7 @@ font-family: myriad-pro, Arial;
         <div class="row p-5 m-3">
           <div class="col-3">
             <h3>Service <br>offerings</h3>
-            <img src="	https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
+            <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/explore_expand.svg" alt="show" class="wrapper">
           </div>
           <div class="col-3">
             <h3>Explore <br>Industries</h3>
@@ -772,12 +805,14 @@ font-family: myriad-pro, Arial;
           </div>
         </div>
   
-          <div class="container">
-          <div class="centertxt">
-            <h2 class="text4">Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
-            <button class="buttom1">READ MORE</button>
+          <div class="container duck">
+            <div class="container">
+          <div class="centertxt" id="myDIV">
+            <h2>Right the Sound of <br>Opportunity Move <br>1,000+1,000 Lives Forward</h2>
           </div>
+          <button  onclick="myFunction()" class="buttom1">Read More</button>
           <img src="https://regmedia.co.uk/2023/08/10/supplied_infosys_sonic_identity_visual.jpg" alt="Snow" class="imgonhover">
+            </div>
         </div>
         
           <div class=" our-purpose container">
@@ -807,12 +842,6 @@ font-family: myriad-pro, Arial;
             <p>Training (days) conducted for <br> employees, globally</p></div>
         </div>
 
-
-      
-
-
-
-
   <!-- <div class="row">
     <div class="col-md-6 bg-warning text-white" style="padding:0px">
     <h1>,mnvjksdkv</h1>
@@ -825,8 +854,7 @@ font-family: myriad-pro, Arial;
     </div>
     <div class="col-md-6  bg-dark text-white ">
 
-
-<div class="row w-md">
+      <div class="row w-md">
 
 <div class="col-md-6  text-white">
 <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/future-work2023-thumb.jpg" class="" alt="Cinque Terre" style="width:100%;padding:0px" height="150px">
@@ -846,9 +874,16 @@ font-family: myriad-pro, Arial;
 </div> -->
 <div class=" container sikha bg-warning">
   <div class="col-6">
-      h1jgjhgjh
-     
-  </div>
+      <h2 class="the pt-5">In the news</h2>
+      <hr class="sklf" style="color: #000;" width="90%">
+      <p>Infosys Foundation to Enhance Employability <br> of Young Learners in Rural India
+        <hr class="sklf" style="color: #000;" width="90%">
+        <p>Infosys BPM opens second office in Aguadilla; <br> Brings new jobs to the Island</p>
+        <hr class="sklf" style="color: #000;" width="90%">
+        <p>Qorus and Infosys Finacle Collaborate to <br> Recognize Banking Innovation Initatives WorldWide </p>
+        <hr class="sklf" style="color: #000;" width="90%">
+        <div class="p-3 mb-2 bg-success text-white w-75 p-1"><h6>LUNCHD today: Infosys TOpaz - <br> An AI -first offering to accelerate <br> businesses value for global enterprises using generetive AI</h6></div>
+     </div>
   
       <div class="col-6  anand">
       <div class=" col-4 row">
@@ -884,54 +919,89 @@ font-family: myriad-pro, Arial;
       good corporate governance</p>
   </div>
 
-
-   <div class="con">
+ <div class="container-md">
     <div class="row">
-      <div class="col">
+      <div class="col-md-9">
         <div class="position-relative p-2 ml-3 digital3">
           <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/annual-report-2024-mob.jpg" alt="show" >
           <h1 class="position-absolute bottom-0 start-1 text-white p-2 fs-1">Integrated Annual Report 2024</h1>
          </div>
          </div>
       
-         <div class="col">
-        <h2 class="sdfkj"><b>Investor Center</b></h2>
+       <div class="col jhbhjghj">
+      <h2 class="sdfkj"><b>Investor Center</b></h2>
         <p>RESULT</p>
-          </div> 
-      </div>
+    <h5>Fourth Quarter FY24</h5>
+    <hr class="hfk w-75">
+    <br>
+    <p>ARCHIVED WEBCOST</p>
+    <h5>QR FY24 Press Conference</h5>
+    <hr class="hfk w-100">
+    <br>
+    <p>EVENT</p>
+    <h5>The 43rd Annual General Meeting</h5>
+    <hr class="hfk w-100">
+    <br>
+    <p class="fdgd" style="color: #0271b1;"></p>
+    <a href="https://www.infosys.com/" style="color: #0271b1;">VIEW ALL</a>
+    </div> 
+    </div>
+    </div>
+
+    <div class="col-12">
+       <div class="row-2">
+            <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/careers-video-img.jpg" alt="show" class="sjdf w-100 p-5 h-100">
+            <h6 class="text-white fs-1 top-50 digital5">LIFE AT INFOSYS</h6>
+              <div class="row bg-body-secondary w-sm mb-50 digital6">
+                <div class="col ir">
+                 <div class="p-3 ir1 top-2"><img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/annam-emp.png" class="rounded-circle" alt="Cinque Terre" width="80" height="70 text-primer">
+                </div>
+               <div class="digital7"> <h5>WHAT OUR PEOPLE SAY</h5> " <b><i> I joined Infosys because of the <br> excellent hands-on training."<br>-Annam,Infosys Plano</b></i></div>
+              </div>
+            </div>     
+          </div>
+           </div>
       
-      
-      
-        </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <p class="jgkhgf fs-1" style="color: #000;">Find opportunity right for the you</p>
+                    <button class="toyi">EXPLORE CARRERS</button>
+                  </div> 
+                  </div>
+                    </div>
+    
+                  hejhfhgfgh
 
 
 
-     
-   
+
+
+
+
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
 </div>
-
 
 <script>
   function navigateToPage() {
       window.location.href = 'https://www.infosys.com/';
   }
-</script>
+
+
+
+
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ </script>
+
+
  
 
 
